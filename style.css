@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:800|Roboto');
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background: #eceff1;
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.container{
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	overflow: hidden;
+	padding-bottom: 10px; 
+}
+
+.headline-image{
+	height: 70px;
+	width: auto;
+	padding-top: 15px;
+}
+
+.headline{
+	font-size: 70px;
+	padding: 20px;
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+.image-container{
+	background: #EEE;
+	display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: column;
+  -webkit-flex-flow: row wrap; 
+  flex-flow: row wrap; 
+  display: -webkit-box;
+  display: flex;
+  align-items: center;
+}
+
+.image{
+	-webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto; 
+  width: 300px; 
+  margin: .1vw;
+}
+
+.image img {
+	width: 100%; 
+  height: auto; 
+	border: 1px solid rgba(0, 0, 0, .5);
+}
+
+.material-placeholder{
+	flex: 1;
+}
+
+#moreImagesBtn{
+	display: none;
+	margin: 20px;
+	padding: 20px;
+}
+
+#moreImagesBtn > i{
+	font-size: 18px;
+}
+
+/*
+	------------------------------
+	Changes to the Materialize CSS
+	------------------------------
+*/
+
+.btn{
+	background: #0091ea;
+}
+
+.btn:hover{
+	background: #03a9f4;
+}
+
+.btn > i{
+	margin-right: 10px;
+	font-size: 18px;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 1px solid #0091ea;
+  box-shadow: 0 2px 0 0 #0091ea;
+}
+
+input:not([type]):focus:not([readonly])+label,input[type=text]:not(.browser-default):focus:not([readonly])+label,input[type=password]:not(.browser-default):focus:not([readonly])+label,input[type=email]:not(.browser-default):focus:not([readonly])+label,input[type=url]:not(.browser-default):focus:not([readonly])+label,input[type=time]:not(.browser-default):focus:not([readonly])+label,input[type=date]:not(.browser-default):focus:not([readonly])+label,input[type=datetime]:not(.browser-default):focus:not([readonly])+label,input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label,input[type=tel]:not(.browser-default):focus:not([readonly])+label,input[type=number]:not(.browser-default):focus:not([readonly])+label,input[type=search]:not(.browser-default):focus:not([readonly])+label,textarea.materialize-textarea:focus:not([readonly])+label {
+    color: #0091ea;
+}
+
+/*
+	MEDIA QUERIES
+*/
+
+@media screen and (max-width: 400px) {
+  image-container div { margin: 0; }
+  image-container { padding: 0; }
+  
+}

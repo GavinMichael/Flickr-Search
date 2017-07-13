@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flickr Search</title>
+	
+	<!-- Materialize CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- 
+
+	//search field 
+	//submit btn 
+	//loading spinner
+	//container for the image
+	//image
+
+	-->
+	<div class="container">
+		<h1 class="headline">
+			<img src="http://www.freeiconspng.com/uploads/flickr-icon-0.png" alt="" class="headline-image">
+			Flickr Image Search
+		</h1>
+
+		<div class="row">
+	    <div class="input-field col s5">
+	      <!-- // Search Box -->
+	      <input id="userInput" type="text" class="validate">
+	      <label for="userInput">Search For An Image</label>
+	    </div>
+	    <div class="input-field col s2">
+	      <!-- // Search Button -->
+	      <a class="waves-effect waves-light btn" id="searchBtn">
+	        <i class="fa fa-search" aria-hidden="true"></i> Search
+	      </a>
+	    </div>
+    </div>
+
+		<div class="image-container">
+			<!-- // Search results will be appended here -->
+		</div>
+		<!-- // More image btn -->
+		<a class="waves-effect waves-light btn" id="moreImagesBtn">
+			BRING MORE
+			<i class="fa fa-chevron-down" aria-hidden="true"></i> 
+		</a>
+	</div>
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<!-- Materialize JS -->
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+	<!-- Custom Scripts -->
+	<script src='script.js'></script>
+</body>
+</html>
