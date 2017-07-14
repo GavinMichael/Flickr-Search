@@ -90,14 +90,15 @@ $(function () {
 	function pushImages(url, title){
 		// Build the HTML element
 		let htmlText = 	'<div class="image">' +
-										'<img class="materialboxed" data-caption="' +
-										title +
-										'" src="' +
-										url +
-										'">' +
-										'</div>';
-										imageContainer.append(htmlText);
-										$('.materialboxed').materialbox();
+				'<img class="materialboxed" data-caption="' +
+				title +
+				'" src="' +
+				url +
+				'">' +
+				'</div>';
+				imageContainer.append(htmlText);
+		// Add the Materialize functionality to the images
+		$('.materialboxed').materialbox();
 
 	}; // END OF pushImages
 
